@@ -15,7 +15,7 @@ body{
     height: auto;
     display: flex;
     justify-content: flex-end;
-    background-color:#151414;
+    background-color:#0a0a0a;
     top: 0;
     left: 0;
     padding-left: 50px;
@@ -40,6 +40,27 @@ nav ul{
     font-size: 35px;
     margin-top: 40px;
     margin-bottom: 15px;
+}
+
+input[type=text] {
+    background-color: #6f6a6a;
+    color: white;
+    border: 0px solid black;
+    height: 25px;
+}
+
+.button {
+    background-color: #6f6a6a;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 .field{

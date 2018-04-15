@@ -66,6 +66,9 @@ def representativesOnline(request):
     
         url = 'http://' + URLBASE + '/get_online_representatives'
         j = post_request(url, d)
+        reps = j["representatives"]
+        lp = len(reps)
+        j["len"] = lp
 
         return render(request,"representativesOnline.html", j)
 
@@ -74,6 +77,9 @@ def representativesOnline(request):
     
         url = 'http://' + URLBASE + '/get_online_representatives'
         j = post_request(url, d)
+        reps = j["representatives"]
+        lp = len(reps)
+        j["len"] = lp
 
         return render(request,"representativesOnline.html", j)
 
