@@ -49,6 +49,10 @@ input[type=text] {
     height: 25px;
 }
 
+::placeholder {
+    color:white;
+}
+
 .button {
     background-color: #6f6a6a;
     border: none;
