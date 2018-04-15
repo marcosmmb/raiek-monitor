@@ -42,6 +42,20 @@ nav ul{
     margin-bottom: 15px;
 }
 
+.home-title{
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.home-content{
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 input[type=text] {
     background-color: #6f6a6a;
     color: white;
