@@ -1,0 +1,109 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: rgb(32, 30, 30);
+    color: white;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    background-color:#151414;
+    top: 0;
+    left: 0;
+    padding-left: 50px;
+}
+
+.logo{
+    align-self: center;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    font-size: 16px;
+    color: #393434;
+    list-style: none;
+}
+
+.title{
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.field{
+    margin-top: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #484242;
+    width: 25%;
+    padding: 0 5px;
+}
+
+.larger-field{
+    margin-top: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #484242;
+    width: 70%;
+    padding: 0 5px;
+}
+
+.dict-field{
+    height: 110px;
+    margin-top: 10px;
+    display: block;
+    background-color: #484242;
+    width: 70%;
+    padding: 0 5px;
+}
+
+.dict-content{
+    display: flex;
+    padding: 5px 0;
+}
+
+.info-title{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.info-content{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+a:active{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}

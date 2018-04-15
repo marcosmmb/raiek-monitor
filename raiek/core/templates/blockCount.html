@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="title">Block Count</div>
+        
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Refresh</button>
+    </form>
+
+    <div>
+        <div class="field">
+            <div class="info-title">
+                <b>Block count</b> 
+            </div>
+            <div class="info-content">
+                {{ count }}
+            </div>
+        </div>
+        <div class="field">
+                <div class="info-title">
+                    <b>Unchecked</b> 
+                </div>
+                <div class="info-content">
+                    {{ unchecked }}
+                </div>
+        </div>
+    </div>
+{% endblock %}

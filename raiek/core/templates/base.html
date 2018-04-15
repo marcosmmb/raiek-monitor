@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" >
+    <title>Raiek</title>    
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="{% static "img/nano-logo.png" %}" width="20%">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="base.html" style="margin-right: 50px">Home</a></li>
+                <li><a href="blockCount.html" style="margin-right: 50px">Block Count</a></li>     
+                <li><a href="nodeVersion.html" style="margin-right: 50px">Node Version</a></li>            
+                <li><a href="accountInformation.html" style="margin-right: 50px">Account Information</a></li>
+                <li><a href="accountHistory.html" style="margin-right: 50px">Account History</a></li>
+                <li><a href="representativesOnline.html" style="margin-right: 100px">Online Representatives</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <br>
+
+    {% block content %}
+    {% endblock %}
+    
+</body>
+</html>
