@@ -1,50 +1,52 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="title">Account history</div>
-        
-    <form method="POST">
-        {% csrf_token %}
-        <input type="text" name="account" placeholder="Account">
-        <input type="text" name="count" placeholder="Count">
-        <button type="submit" class="button">Submit</button>
-    </form>
+    <div class="generic">
+        <div class="title">Account history</div>
+            
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="account" placeholder="Account">
+            <input type="text" name="count" placeholder="Count">
+            <button type="submit" class="button">Submit</button>
+        </form>
 
-    <div>
-        {% for h in history %}
-            <div class="dict-field">
-                <div class="dict-content">
-                    <div class="info-title">
-                        <b>Account</b>
+        <div>
+            {% for h in history %}
+                <div class="dict-field">
+                    <div class="dict-content">
+                        <div class="info-title">
+                            <b>Account</b>
+                        </div>
+                        <div class="largefield-content">
+                            {{ h.account }}
+                        </div>
                     </div>
-                    <div class="info-content">
-                        {{ h.account }}
+                    <div class="dict-content">
+                        <div class="info-title">
+                            <b>Amount</b>
+                        </div>
+                        <div class="largefield-content">
+                            {{ h.amount }}
+                        </div>
                     </div>
-                </div>
-                <div class="dict-content">
-                    <div class="info-title">
-                        <b>Amount</b>
+                    <div class="dict-content">
+                        <div class="info-title">
+                            <b>Hash</b>
+                        </div>
+                        <div class="largefield-content">
+                            {{ h.hash }}
+                        </div>
                     </div>
-                    <div class="info-content">
-                        {{ h.amount }}
+                    <div class="dict-content">
+                        <div class="info-title">
+                            <b>Type</b>
+                        </div>
+                        <div class="largefield-content">
+                            {{ h.type }}
+                        </div>
                     </div>
-                </div>
-                <div class="dict-content">
-                    <div class="info-title">
-                        <b>Hash</b>
-                    </div>
-                    <div class="info-content">
-                        {{ h.hash }}
-                    </div>
-                </div>
-                <div class="dict-content">
-                    <div class="info-title">
-                        <b>Type</b>
-                    </div>
-                    <div class="info-content">
-                        {{ h.type }}
-                    </div>
-                </div>
-            </div>            
-        {% endfor %}
+                </div>            
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}

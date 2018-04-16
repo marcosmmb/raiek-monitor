@@ -4,32 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="{% static "img/icon.png" %}" type="image/x-icon" />
     <link rel="shortcut icon" href="{% static "img/icon.png" %}" type="image/x-icon" />
-    <title>Raiek</title>    
+    <title>Raiek</title>
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script> 
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="sidebar">
         <div class="logo">
-            <a href="home.html"><img src="{% static "img/nano-logo.png" %}" width="20%"></a>
+            <a href="home.html">
+                <div class="logo-img"><img src="{% static "img/logo-nano.png" %}" width="30%"></div>
+            </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="home.html" style="margin-right: 50px">Home</a></li>
-                <li><a href="blockCount.html" style="margin-right: 50px">Block Count</a></li>     
-                <li><a href="nodeVersion.html" style="margin-right: 50px">Node Version</a></li>            
-                <li><a href="accountInformation.html" style="margin-right: 50px">Account Information</a></li>
-                <li><a href="accountHistory.html" style="margin-right: 50px">Account History</a></li>
-                <li><a href="representativesOnline.html" style="margin-right: 100px">Online Representatives</a></li>
-            </ul>
-        </nav>
+        <div class="nav-item"><a href="home.html" style="margin-right: 50px">Home</a></div>
+        <div class="nav-item"><a href="blockCount.html" style="margin-right: 50px">Block Count</a></div>
+        <div class="nav-item"><a href="nodeVersion.html" style="margin-right: 50px">Node Version</a></div>
+        <div class="nav-item"><a href="accountInformation.html" style="margin-right: 50px">Account Information</a></div>
+        <div class="nav-item"><a href="accountHistory.html" style="margin-right: 50px">Account History</a></div>
+        <div class="nav-item"><a href="representativesOnline.html" style="margin-right: 100px">Online Representatives</a></div>
     </div>
 
     <br>
 
     {% block content %}
     {% endblock %}
+
+<!-- <script>
+function nav_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function nav_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script> -->
     
 </body>
 </html>

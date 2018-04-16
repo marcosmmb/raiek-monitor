@@ -9,31 +9,35 @@ body{
     color: white;
 }
 
-.navbar{
+.sidebar{
     position: fixed;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
+    height: 100%;
+    width: 18%;
+    display: block;
     background-color:#0a0a0a;
+    font-size: 16px;
     top: 0;
     left: 0;
-    padding-left: 50px;
+}
+
+.nav-item{
+    margin: 10px 0;
+    padding: 5px;
 }
 
 .logo{
-    align-self: center;
+    height: 55px;
+    display: flex;
 }
 
-nav ul{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    
-    font-size: 16px;
-    color: #393434;
-    list-style: none;
+.logo-img{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.generic{
+    margin-left: 19%;
+    margin-right: 10px;
 }
 
 .title{
@@ -54,6 +58,46 @@ nav ul{
     margin-top: 80px;
     margin-bottom: 15px;
     text-align: center;
+}
+
+.about{
+    margin-bottom: 20px;
+}
+
+.github-content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.github-icon{
+    display: flex;
+    margin-right: 3.5px;
+}
+
+.github-link{
+    display: flex;
+    margin-left: 3.5px;
+}
+
+.representative{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rep-content{
+    word-break: break-all;
+    margin-left: 5px;
+}
+
+.widget-adjust{
+    display: flex;
+    justify-content: center;
+}
+
+.widget-width{
+    width: 80%;
 }
 
 input[type=text] {
@@ -83,12 +127,12 @@ input[type=text] {
 
 .field{
     margin-top: 10px;
-    height: 30px;
+    height: auto;
     display: flex;
     align-items: center;
     background-color: #484242;
-    width: 25%;
-    padding: 0 5px;
+    width: auto;
+    padding: 5px 5px;
 }
 
 .larger-field{
@@ -97,16 +141,16 @@ input[type=text] {
     display: flex;
     align-items: center;
     background-color: #484242;
-    width: 70%;
-    padding: 0 5px;
+    width: auto;
+    padding: 4px 5px;
 }
 
 .dict-field{
-    height: 110px;
+    height: auto;
     margin-top: 10px;
     display: block;
     background-color: #484242;
-    width: 70%;
+    width: auto;
     padding: 0 5px;
 }
 
@@ -125,6 +169,43 @@ input[type=text] {
     display: flex;
     justify-content: flex-end;
     width: 50%;
+}
+
+.largefield-content{
+    /* display: block;
+    justify-content: flex-end;
+    line-break: auto; */
+
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+@media only screen and (max-width:900px){
+    .sidebar{
+        width: 23%;
+    }
+
+    .generic{
+        margin-left: 25%;
+    }
+
+    .larger-field{
+        display: block;
+        height: auto;
+    }
+
+    .info-title{
+        margin: 0;
+        display: block;
+    }
+
+    .largefield-content{
+        height: auto;
+        word-break: break-all;
+        width: 100%;
+        justify-content: flex-start;
+    }
 }
 
 a:link{

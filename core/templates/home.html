@@ -1,12 +1,36 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-    <div class="home">
-        <div class="home-title">Raiek Wallet API Monitor</div>
+    <div class="generic">
+        <div class="home">
+            <div class="home-title">Raiek Wallet API Monitor</div>
 
-        <div class="home-content">
-            <p>An open source monitor for Nano nodes using RPC requests with Raiek wallet API.</p>
-            <p><b>Github: </b><a href="https://github.com/marcosmmb/raiek-monitor">/marcosmmb/raiek-monitor</a></p>
-            <p><b>Representative: </b>xrb_3uz97e4tq34fkqusm3cgps4myho8u6ptr9uqc4z4bibuajh4gicapsqmetmc</p>
+            <div class="home-content">
+                <div class="about">
+                        An open source monitor for Nano nodes using RPC requests with Raiek wallet API.
+                </div>
+                <div class="github-content">
+                    <div class="github-icon">
+                        <img src="{% static "img/github-icon.png" %}">
+                    </div>
+                    <div class="github-link">
+                        <a href="https://github.com/marcosmmb/raiek-monitor">/marcosmmb/raiek-monitor</a>
+                    </div>
+                </div>
+                <div class="representative">
+                    <div>
+                        <b>Representative</b>
+                    </div>
+                    <div class="rep-content">
+                        xrb_3uz97e4tq34fkqusm3cgps4myho8u6ptr9uqc4z4bibuajh4gicapsqmetmc
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget-adjust">
+            <div class="coinmarketcap-currency-widget widget-width" data-currencyid="1567" data-base="USD"  data-secondary="BTC"></div>
         </div>
     </div>
+        
 {% endblock %}

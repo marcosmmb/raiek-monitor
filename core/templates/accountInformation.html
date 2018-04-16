@@ -1,60 +1,62 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="title">Account information</div>
-    
-    <form method="POST">
-        {% csrf_token %}
-        <input type="text" name="account" placeholder="Account">
-        <button type="submit" class="button">Submit</button>
-    </form>
+    <div class="generic">
+        <div class="title">Account information</div>
+        
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="account" placeholder="Account">
+            <button type="submit" class="button">Submit</button>
+        </form>
 
-    <div>
-        <div class="larger-field">
-            <div class="info-title">
-                <b>Balance</b> 
+        <div>
+            <div class="larger-field">
+                <div class="info-title">
+                    <b>Balance</b> 
+                </div>
+                <div class="largefield-content">
+                    {{ balance }}
+                </div>
             </div>
-            <div class="info-content">
-                {{ balance }}
+            <div class="larger-field">
+                <div class="info-title">
+                    <b>Block count</b> 
+                </div>
+                <div class="largefield-content">
+                    {{ block_count }}
+                </div>
             </div>
-        </div>
-        <div class="larger-field">
-            <div class="info-title">
-                <b>Block count</b> 
+            <div class="larger-field">
+                <div class="info-title">
+                    <b>Frontier</b> 
+                </div>
+                <div class="largefield-content">
+                    {{ frontier }}
+                </div>
             </div>
-            <div class="info-content">
-                {{ block_count }}
+            <div class="larger-field">
+                <div class="info-title">
+                    <b>Modified timestamp</b> 
+                </div>
+                <div class="largefield-content">
+                    {{ modified_timestamp }}
+                </div>
             </div>
-        </div>
-        <div class="larger-field">
-            <div class="info-title">
-                <b>Frontier</b> 
+            <div class="larger-field">
+                <div class="info-title">
+                    <b>Open block</b> 
+                </div>
+                <div class="largefield-content">
+                    {{ open_block }}
+                </div>
             </div>
-            <div class="info-content">
-                {{ frontier }}
-            </div>
-        </div>
-        <div class="larger-field">
-            <div class="info-title">
-                <b>Modified timestamp</b> 
-            </div>
-            <div class="info-content">
-                {{ modified_timestamp }}
-            </div>
-        </div>
-        <div class="larger-field">
-            <div class="info-title">
-                <b>Open block</b> 
-            </div>
-            <div class="info-content">
-                {{ open_block }}
-            </div>
-        </div>
-        <div class="larger-field">
-            <div class="info-title">
-                <b>Representative block</b> 
-            </div>
-            <div class="info-content">
-                {{ representative_block }}
+            <div class="larger-field">
+                <div class="info-title">
+                    <b>Representative block</b> 
+                </div>
+                <div class="largefield-content">
+                    {{ representative_block }}
+                </div>
             </div>
         </div>
     </div>
