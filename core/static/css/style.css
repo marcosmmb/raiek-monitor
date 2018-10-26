@@ -183,11 +183,15 @@ input[type=text] {
 
 @media only screen and (max-width:900px){
     .sidebar{
-        width: 23%;
+        width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: max-content;
     }
 
     .generic{
-        margin-left: 25%;
+        margin: auto;
+        padding: 0 20px;
     }
 
     .larger-field{
